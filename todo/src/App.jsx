@@ -38,5 +38,9 @@ function App() {
   </div>
 );
 
+  return 0;
+}
+
+
 export default App;
 }
