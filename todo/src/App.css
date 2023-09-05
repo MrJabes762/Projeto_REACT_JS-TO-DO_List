@@ -1,4 +1,4 @@
-body{
+body {
   font-size: Arial;
   background-color: #f4f4f4;
   padding: 30px;
@@ -7,7 +7,8 @@ body{
   background-position: center;
   background-size: cover;
 }
-.app{
+
+.app {
   max-width: 600px;
   margin: 0 auto 300px;
   background-color: #efefef;
@@ -15,52 +16,54 @@ body{
   border-radius: 10px;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-h2{
+h2 {
   margin-bottom: 10px;
 }
 
-p{
+p {
   margin: 10px 0;
 }
 
-input{
+input {
   box-sizing: border-box;
 }
-button{
-   background-color: #333974;
-   color: #fff;
-   padding: 5px 10px;
-   border: none;
-   border-radius: 3px;
-   cursor: pointer;
-   opacity: .8;
-   transition: .3s;
+
+button {
+  background-color: #333974;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
 }
 
 button:hover {
   opacity: 1;
 }
 
-.complete{
+.complete {
   background-color: #5cb85c;
 }
-.remove{
+
+.remove {
   background-color: #d9564f;
 }
-.todo-form{
+
+.todo-form {
   padding-bottom: 1.5rem;
 }
 
-input, 
-select{
+input,
+select {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 3px;
   width: 100%;
 }
-
