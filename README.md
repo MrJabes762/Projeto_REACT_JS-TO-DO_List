@@ -15,17 +15,3 @@
 3- (Open in VSCode - preferably) run the command "npm run dev" (wait).
 4- Press ctrl + click on the link or copy the generated URL and paste it into your browser.
 5- Explore!
-
-
-# Tecnologias Usadas
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
-          
-          
-          
-          
