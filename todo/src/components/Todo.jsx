@@ -2,10 +2,7 @@ import React from 'react';
 
 const Todo = ({ todo, completeTodo, removeTodo }) => {
   return (
-    <div
-      className="todo"
-      style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
-    >
+    <div className="todo" style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}>
       <div className="content">
         <p>{todo.text}</p>
         <p className="category">({todo.category})</p>
@@ -23,3 +20,4 @@ const Todo = ({ todo, completeTodo, removeTodo }) => {
 };
 
 export default Todo;
+

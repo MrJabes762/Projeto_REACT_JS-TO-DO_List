@@ -26,10 +26,11 @@ function App() {
       isCompleted: false,
     },
   ]);
-  const [search, setSearch] = useState(""); // Correção: Separe o estado search de setSearch
 
-  const [filter, setFilter] = useState("All");
+  const [search, setSearch] = useState("");
+  const [filter, setFilter] = useState("ALL");
   const [sort, setSort] = useState("Asc");
+
   const addTodo = (text, category) => {
     const newTodos = [
       ...todos,
@@ -64,29 +65,32 @@ function App() {
   return (
     <div className="app">
       <h1>Lista de Tarefas</h1>
-      <Search search={search} setSearch={setSearch} /> {/* Correção: Passar search e setSearch como props */}
+      <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className="todo-list">
         {todos
           .filter((todo) =>
-            filter === "All"
+            filter === "ALL"
               ? true
-              : filter == "Completed"
-                ? todo.isCompleted
-                : !todo.isCompleted)
+              : filter === "Completed"
+              ? todo.isCompleted
+              : !todo.isCompleted
+          )
           .filter((todo) =>
             todo.text.toLowerCase().includes(search.toLowerCase())
           )
           .sort((a, b) =>
             sort === "Asc"
               ? a.text.localeCompare(b.text)
-              : b.text.localeCompare(a.text))
+              : b.text.localeCompare(a.text)
+          )
           .map((todo) => (
             <Todo
               key={todo.id}
               todo={todo}
               removeTodo={removeTodo}
-              completeTodo={completeTodo} />
+              completeTodo={completeTodo}
+            />
           ))}
       </div>
       <TodoForm addTodo={addTodo} />
